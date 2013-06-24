@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+@class User;
 
-@interface User : NSObject
+@interface User : NSManagedObject
 
 @property (nonatomic) NSDecimal *iQ;
 @property (nonatomic) NSDecimal *eQ;

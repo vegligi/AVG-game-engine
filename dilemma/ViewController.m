@@ -7,13 +7,19 @@
 //
 
 #import "ViewController.h"
-@interface ViewController ()
+#import "AppDelegate.h"
+#import "User.h"
+@interface ViewController (){
+    AppDelegate *app;
+}
+@property (nonatomic, strong) NSArray *user;
 @end
 
 @implementation ViewController
 #pragma mark - lifecycle
 - (void)viewDidLoad{
     [super viewDidLoad];
+    app = [[UIApplication sharedApplication]delegate];
     [self shouldButtonCountinueAppear];
     [self welcomeAnimation];
 }
@@ -22,13 +28,19 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - implementation
+#pragma mark - Implementation
 - (IBAction)buttonNewGame:(id)sender {
 }
 
 -(void)shouldButtonCountinueAppear{
-    //read database then decide.
-    self.buttonContinue.hidden = YES;
+    //Datamanager
+    self.user = [app.dataManager fetchRecordsForEntity:@"User"];
+    if([self.user count] <= 0){
+        self.buttonContinue.hidden = YES;
+    }else{
+        self.buttonSetting.hidden = NO;
+    }
+    
 }
 
 -(void)welcomeAnimation{
@@ -41,4 +53,6 @@
         self.buttonSetting.alpha = 100;
     }];
 }
+
+#pragma mark - Button Functions
 @end

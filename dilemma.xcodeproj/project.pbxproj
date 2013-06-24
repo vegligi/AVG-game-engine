@@ -10,6 +10,7 @@
 		8642E696177881CF0005FA94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8642E694177881CF0005FA94 /* Model.xcdatamodeld */; };
 		8642E699177884980005FA94 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642E698177884980005FA94 /* User.m */; };
 		8642E69B177885DD0005FA94 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8642E69A177885DD0005FA94 /* CoreData.framework */; };
+		8642E69F17788BC50005FA94 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642E69E17788BC50005FA94 /* DataManager.m */; };
 		86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBD177870F00028ECDC /* UIKit.framework */; };
 		86DBCDC0177870F00028ECDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBF177870F00028ECDC /* Foundation.framework */; };
 		86DBCDC2177870F00028ECDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDC1177870F00028ECDC /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 		8642E697177884980005FA94 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8642E698177884980005FA94 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		8642E69A177885DD0005FA94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8642E69D17788BC50005FA94 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		8642E69E17788BC50005FA94 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		86DBCDBA177870F00028ECDC /* dilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DBCDBD177870F00028ECDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DBCDBF177870F00028ECDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,8 @@
 		8642E69C17788B710005FA94 /* Model controller */ = {
 			isa = PBXGroup;
 			children = (
+				8642E69D17788BC50005FA94 /* DataManager.h */,
+				8642E69E17788BC50005FA94 /* DataManager.m */,
 			);
 			name = "Model controller";
 			sourceTree = "<group>";
@@ -101,8 +106,8 @@
 			children = (
 				86DBCDCC177870F00028ECDC /* AppDelegate.h */,
 				86DBCDCD177870F00028ECDC /* AppDelegate.m */,
-				86DBCDE1177872930028ECDC /* Model */,
 				86DBCDD5177870F00028ECDC /* MainStoryboard.storyboard */,
+				86DBCDE1177872930028ECDC /* Model */,
 				86DBCDE0177870F70028ECDC /* View Controller */,
 				86DBCDC4177870F00028ECDC /* Supporting Files */,
 			);
@@ -222,6 +227,7 @@
 				86DBCDDA177870F10028ECDC /* ViewController.m in Sources */,
 				8642E696177881CF0005FA94 /* Model.xcdatamodeld in Sources */,
 				8642E699177884980005FA94 /* User.m in Sources */,
+				8642E69F17788BC50005FA94 /* DataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

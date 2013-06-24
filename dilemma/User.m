@@ -10,4 +10,16 @@
 
 @implementation User
 
+@dynamic iQ;
+@dynamic eQ;
+@dynamic family;
+@dynamic appearance;
+@dynamic energy;
+@dynamic money;
+@dynamic health;
+@dynamic adorable;
+@dynamic has_lover;
+@dynamic truthful_lover;
+@dynamic truthful_friend;
+
 @end
