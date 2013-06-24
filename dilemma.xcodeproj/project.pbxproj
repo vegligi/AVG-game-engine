@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8642E696177881CF0005FA94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8642E694177881CF0005FA94 /* Model.xcdatamodeld */; };
+		8642E699177884980005FA94 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642E698177884980005FA94 /* User.m */; };
+		8642E69B177885DD0005FA94 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8642E69A177885DD0005FA94 /* CoreData.framework */; };
 		86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBD177870F00028ECDC /* UIKit.framework */; };
 		86DBCDC0177870F00028ECDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBF177870F00028ECDC /* Foundation.framework */; };
 		86DBCDC2177870F00028ECDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDC1177870F00028ECDC /* CoreGraphics.framework */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8642E695177881CF0005FA94 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8642E697177884980005FA94 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8642E698177884980005FA94 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8642E69A177885DD0005FA94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		86DBCDBA177870F00028ECDC /* dilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DBCDBD177870F00028ECDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DBCDBF177870F00028ECDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8642E69B177885DD0005FA94 /* CoreData.framework in Frameworks */,
 				86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */,
 				86DBCDC0177870F00028ECDC /* Foundation.framework in Frameworks */,
 				86DBCDC2177870F00028ECDC /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8642E69C17788B710005FA94 /* Model controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model controller";
+			sourceTree = "<group>";
+		};
 		86DBCDB1177870F00028ECDC = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +88,7 @@
 		86DBCDBC177870F00028ECDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8642E69A177885DD0005FA94 /* CoreData.framework */,
 				86DBCDBD177870F00028ECDC /* UIKit.framework */,
 				86DBCDBF177870F00028ECDC /* Foundation.framework */,
 				86DBCDC1177870F00028ECDC /* CoreGraphics.framework */,
@@ -85,6 +101,7 @@
 			children = (
 				86DBCDCC177870F00028ECDC /* AppDelegate.h */,
 				86DBCDCD177870F00028ECDC /* AppDelegate.m */,
+				86DBCDE1177872930028ECDC /* Model */,
 				86DBCDD5177870F00028ECDC /* MainStoryboard.storyboard */,
 				86DBCDE0177870F70028ECDC /* View Controller */,
 				86DBCDC4177870F00028ECDC /* Supporting Files */,
@@ -109,10 +126,29 @@
 		86DBCDE0177870F70028ECDC /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				86DBCDE2177874BB0028ECDC /* Before tha game */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		86DBCDE1177872930028ECDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8642E69C17788B710005FA94 /* Model controller */,
+				8642E694177881CF0005FA94 /* Model.xcdatamodeld */,
+				8642E697177884980005FA94 /* User.h */,
+				8642E698177884980005FA94 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		86DBCDE2177874BB0028ECDC /* Before tha game */ = {
+			isa = PBXGroup;
+			children = (
 				86DBCDD8177870F10028ECDC /* ViewController.h */,
 				86DBCDD9177870F10028ECDC /* ViewController.m */,
 			);
-			name = "View Controller";
+			name = "Before tha game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +220,8 @@
 				86DBCDCA177870F00028ECDC /* main.m in Sources */,
 				86DBCDCE177870F00028ECDC /* AppDelegate.m in Sources */,
 				86DBCDDA177870F10028ECDC /* ViewController.m in Sources */,
+				8642E696177881CF0005FA94 /* Model.xcdatamodeld in Sources */,
+				8642E699177884980005FA94 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +272,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -258,7 +296,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -306,8 +344,22 @@
 				86DBCDDF177870F10028ECDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8642E694177881CF0005FA94 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8642E695177881CF0005FA94 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8642E695177881CF0005FA94 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 86DBCDB2177870F00028ECDC /* Project object */;
 }

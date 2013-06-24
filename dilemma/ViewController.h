@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *buttonContinue;
+@property (weak, nonatomic) IBOutlet UIButton *buttonNewGame;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
+- (IBAction)buttonNewGame:(id)sender;
 
 @end

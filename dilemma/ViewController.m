@@ -7,23 +7,38 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad
-{
+#pragma mark - lifecycle
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self shouldButtonCountinueAppear];
+    [self welcomeAnimation];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - implementation
+- (IBAction)buttonNewGame:(id)sender {
+}
+
+-(void)shouldButtonCountinueAppear{
+    //read database then decide.
+    self.buttonContinue.hidden = YES;
+}
+
+-(void)welcomeAnimation{
+    self.buttonContinue.alpha = 0;
+    self.buttonNewGame.alpha = 0;
+    self.buttonSetting.alpha = 0;
+    [UIView animateWithDuration:1.2 animations:^(void){
+        self.buttonContinue.alpha = 100;
+        self.buttonNewGame.alpha = 100;
+        self.buttonSetting.alpha = 100;
+    }];
+}
 @end
