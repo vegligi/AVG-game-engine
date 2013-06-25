@@ -12,15 +12,15 @@
 
 @interface User : NSManagedObject
 
-@property (nonatomic) NSDecimal *iQ;
-@property (nonatomic) NSDecimal *eQ;
-@property (nonatomic) NSDecimal *family;
-@property (nonatomic) NSDecimal *appearance;
-@property (nonatomic) NSDecimal *energy;
-@property (nonatomic) NSDecimal *money;
-@property (nonatomic) NSDecimal *health;
+@property (nonatomic) NSNumber *iQ;
+@property (nonatomic) NSNumber *eQ;
+@property (nonatomic) NSNumber *family;
+@property (nonatomic) NSNumber *appearance;
+@property (nonatomic) NSNumber *energy;
+@property (nonatomic) NSNumber *money;
+@property (nonatomic) NSNumber *health;
 //-------hidden value for user
-@property (nonatomic) NSDecimal *adorable;
+@property (nonatomic) NSNumber *adorable;
 @property (nonatomic) BOOL *has_lover;
 @property (nonatomic) BOOL *truthful_lover;
 @property (nonatomic) BOOL *truthful_friend;

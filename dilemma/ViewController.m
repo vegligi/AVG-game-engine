@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+//Connect to DataManager
 #import "AppDelegate.h"
-#import "User.h"
 @interface ViewController (){
+    //alloc DataManager (not exactly)
     AppDelegate *app;
 }
 @property (nonatomic, strong) NSArray *user;
@@ -19,6 +20,11 @@
 #pragma mark - lifecycle
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    //since child view controller calls turnItOff, notification center calls function "turnButtonCountinuesOff"
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(turnButtonCountinuesOff) name:@"turnItOff" object:nil];
+    
+    //init DataManager (not exaclty)
     app = [[UIApplication sharedApplication]delegate];
     [self shouldButtonCountinueAppear];
     [self welcomeAnimation];
@@ -32,15 +38,18 @@
 - (IBAction)buttonNewGame:(id)sender {
 }
 
+-(void)turnButtonCountinuesOff{
+    self.buttonContinue.hidden = YES;
+}
+
 -(void)shouldButtonCountinueAppear{
     //Datamanager
     self.user = [app.dataManager fetchRecordsForEntity:@"User"];
     if([self.user count] <= 0){
         self.buttonContinue.hidden = YES;
     }else{
-        self.buttonSetting.hidden = NO;
+        self.buttonContinue.hidden = NO;
     }
-    
 }
 
 -(void)welcomeAnimation{
