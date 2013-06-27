@@ -37,6 +37,17 @@
 }
 
 - (IBAction)buttonDeleteEntity:(id)sender {
+    UIAlertView *alertDialog;
+    alertDialog = [[UIAlertView alloc]
+                   initWithTitle: @"Do you want to delete game progress??"
+                   message:@" (╯°□°）╯︵ ┻━┻"
+                   delegate: self
+                   cancelButtonTitle: @"Cancel"
+                   otherButtonTitles: @"Delete data", nil];
+	[alertDialog show];
+}
+
+-(void)deleteEntity{
     //fetch the column by index _pk
     //self.user = [app.dataManager fetchRecordsForEntity:@"User" havingValue:@"2" forColumn:@"_pk"];
     //delete all the columns
@@ -48,5 +59,14 @@
     }
     //connect to parent UI view controller calls notification turnItOff.
     [[NSNotificationCenter defaultCenter] postNotificationName:@"turnItOff" object:nil];
+}
+
+#pragma mark -- alert
+- (void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+	NSString *buttonTitle=[alertView buttonTitleAtIndex:buttonIndex];
+	if ([buttonTitle isEqualToString:@"Delete data"]) {
+        [self deleteEntity];
+    }
 }
 @end
