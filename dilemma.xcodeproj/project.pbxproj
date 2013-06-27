@@ -11,6 +11,7 @@
 		8642E699177884980005FA94 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642E698177884980005FA94 /* User.m */; };
 		8642E69B177885DD0005FA94 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8642E69A177885DD0005FA94 /* CoreData.framework */; };
 		8642E69F17788BC50005FA94 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8642E69E17788BC50005FA94 /* DataManager.m */; };
+		86592047177C5264008652EB /* GameMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 86592046177C5264008652EB /* GameMode.m */; };
 		86B43D4C1779D12D002CD1F7 /* StartNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4B1779D12D002CD1F7 /* StartNewGameViewController.m */; };
 		86B43D4F1779D180002CD1F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4E1779D180002CD1F7 /* SettingViewController.m */; };
 		86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBD177870F00028ECDC /* UIKit.framework */; };
@@ -33,6 +34,8 @@
 		8642E69A177885DD0005FA94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8642E69D17788BC50005FA94 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		8642E69E17788BC50005FA94 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		86592045177C5264008652EB /* GameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMode.h; sourceTree = "<group>"; };
+		86592046177C5264008652EB /* GameMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMode.m; sourceTree = "<group>"; };
 		86B43D4A1779D12D002CD1F7 /* StartNewGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartNewGameViewController.h; sourceTree = "<group>"; };
 		86B43D4B1779D12D002CD1F7 /* StartNewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartNewGameViewController.m; sourceTree = "<group>"; };
 		86B43D4D1779D180002CD1F7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 			children = (
 				8642E69C17788B710005FA94 /* Model controller */,
 				8642E694177881CF0005FA94 /* Model.xcdatamodeld */,
+				86592045177C5264008652EB /* GameMode.h */,
+				86592046177C5264008652EB /* GameMode.m */,
 				8642E697177884980005FA94 /* User.h */,
 				8642E698177884980005FA94 /* User.m */,
 			);
@@ -240,6 +245,7 @@
 				8642E69F17788BC50005FA94 /* DataManager.m in Sources */,
 				86B43D4C1779D12D002CD1F7 /* StartNewGameViewController.m in Sources */,
 				86B43D4F1779D180002CD1F7 /* SettingViewController.m in Sources */,
+				86592047177C5264008652EB /* GameMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
