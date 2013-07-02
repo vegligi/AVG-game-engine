@@ -28,6 +28,7 @@
     app = [[UIApplication sharedApplication]delegate];
     [self shouldButtonCountinueAppear];
     [self welcomeAnimation];
+    [self updateGameMode];
 }
 
 - (void)didReceiveMemoryWarning{
@@ -36,43 +37,47 @@
 
 #pragma mark - Implementation
 - (IBAction)buttonNewGame:(id)sender {
-//    self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
-//    for (GameMode *dataarray in self.dataArray){
-//        if(!dataarray.rpg){
-//            //clean database
-//            self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
-//            for (User *dataarray in self.dataArray){
-//                [app.dataManager deleteRecord: dataarray];
-//                [app.dataManager saveContext];
-//            }
-//            //create new Entity
-//            User *dataArray = (User*)[app.dataManager createRecordForEntity:@"User"];
-//            int appearance = arc4random() % 10;
-//            int iq = arc4random() % 10;
-//            int eq = arc4random() % 10;
-//            int energy = arc4random() % 10;
-//            int sum = energy + eq + iq + appearance;
-//            appearance = appearance*11/sum;
-//            iq = iq*11/sum;
-//            eq = eq*11/sum;
-//            energy = energy*11/sum;
-//            int health = 15 - appearance - iq - eq - energy;
-//            //generate 
-//            dataArray.appearance = @(appearance);
-//            dataArray.iQ = @(iq);
-//            dataArray.eQ = @(eq);
-//            dataArray.energy = @(energy);
-//            dataArray.health = @(health);
-//            dataArray.family = @(sum);
-//            //Default
-//            [dataArray setTruthful_friend:@YES];
-//            [dataArray setTruthful_lover:@YES];
-//            [dataArray setHas_lover:@NO];
-//            dataArray.money = @(0);
-//            dataArray.adorable = 0;
-//            [app.dataManager saveContext];
-//        }
-//    }
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
+    for (GameMode *dataarray in self.dataArray){
+        if(![[dataarray rpg] boolValue]){ //real Life Mode
+            [self createRandomUserData];
+            [self performSegueWithIdentifier:@"segueToStage1" sender:self];
+       }
+    }
+}
+
+-(void)createRandomUserData{
+    //clean database
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
+    for (User *dataarray in self.dataArray){
+        [app.dataManager deleteRecord: dataarray];
+        [app.dataManager saveContext];
+    }
+    //create new Entity
+    User *dataArray = (User*)[app.dataManager createRecordForEntity:@"User"];
+    int appearance = arc4random() % 10;
+    int iq = arc4random() % 10;
+    int eq = arc4random() % 10;
+    int energy = arc4random() % 10;
+    int sum = energy + eq + iq + appearance;
+    appearance = appearance*11/sum;
+    iq = iq*11/sum;
+    eq = eq*11/sum;
+    energy = energy*11/sum;
+    int health = 16 - appearance - iq - eq - energy;
+    //generate
+    dataArray.appearance = @(appearance);
+    dataArray.iQ = @(iq);
+    dataArray.eQ = @(eq);
+    dataArray.energy = @(energy);
+    dataArray.health = @(health);
+    //Default
+    [dataArray setTruthful_friend:@YES];
+    [dataArray setTruthful_lover:@YES];
+    [dataArray setHas_lover:@NO];
+    dataArray.money = @(0);
+    dataArray.adorable = @(0);
+    [app.dataManager saveContext];
 }
 
 -(void)turnButtonCountinuesOff{
@@ -86,6 +91,15 @@
         self.buttonContinue.hidden = YES;
     }else{
         self.buttonContinue.hidden = NO;
+    }
+}
+
+-(void)updateGameMode{
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
+    if([self.dataArray count] == 0){
+        GameMode *gameMode = (GameMode*)[app.dataManager createRecordForEntity:@"GameMode"];
+        [gameMode setRpg:@YES];
+        [app.dataManager saveContext];
     }
 }
 

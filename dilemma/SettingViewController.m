@@ -29,12 +29,8 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     app = [[UIApplication sharedApplication]delegate];
-    //exception
-    if(self.dataArray == nil){
-        GameMode *gameMode = (GameMode*)[app.dataManager createRecordForEntity:@"GameMode"];
-        [gameMode setRpg:@YES];
-        [app.dataManager saveContext];
-    }
+    [self loadSegmentedControllersSelection];
+  
 }
 
 - (void)didReceiveMemoryWarning{
@@ -66,6 +62,17 @@
         [app.dataManager saveContext];
     }
     
+}
+
+-(void)loadSegmentedControllersSelection{
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
+    for(GameMode *gameMode in self.dataArray){
+        if([[gameMode rpg] boolValue]){
+            self.gameMode.selectedSegmentIndex = 0;
+        }else{
+            self.gameMode.selectedSegmentIndex = 1;
+        }
+    }
 }
 
 -(void)deleteEntity{

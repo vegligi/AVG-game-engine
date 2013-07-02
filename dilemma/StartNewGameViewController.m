@@ -62,6 +62,7 @@
     dataArray.money = @(0);
     dataArray.adorable = @(0);
     [app.dataManager saveContext];
+    [self performSegueWithIdentifier:@"segueToStage1" sender:self];
 }
 
 #pragma mark - Stepper

@@ -13,11 +13,12 @@
         <attribute name="health" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
         <attribute name="iQ" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
         <attribute name="money" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stage_index" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="truthful_friend" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="truthful_lover" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="333" width="128" height="210"/>
         <element name="GameMode" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="User" positionX="-63" positionY="333" width="128" height="225"/>
     </elements>
 </model>

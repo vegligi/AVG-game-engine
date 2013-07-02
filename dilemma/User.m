@@ -21,5 +21,5 @@
 @dynamic has_lover;
 @dynamic truthful_lover;
 @dynamic truthful_friend;
-
+@dynamic stage_index;
 @end

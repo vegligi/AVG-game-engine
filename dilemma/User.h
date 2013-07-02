@@ -24,5 +24,6 @@
 @property (nonatomic) NSNumber *has_lover;          //bool
 @property (nonatomic) NSNumber *truthful_lover;     //bool
 @property (nonatomic) NSNumber *truthful_friend;    //bool
+@property (nonatomic) NSString *stage_index;
 
 @end
