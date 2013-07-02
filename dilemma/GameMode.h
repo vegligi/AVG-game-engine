@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-@class User;
+@class GameMode;
 
 @interface GameMode : NSManagedObject
 
-@property (nonatomic) BOOL *rpg;
+@property (nonatomic) NSNumber *rpg;
 
 @end

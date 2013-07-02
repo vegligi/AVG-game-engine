@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "User.h"
-
+#import "GameMode.h"
 
 @interface DataManager : NSObject
 

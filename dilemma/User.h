@@ -21,8 +21,8 @@
 @property (nonatomic) NSNumber *health;
 //-------hidden value for user
 @property (nonatomic) NSNumber *adorable;
-@property (nonatomic) BOOL *has_lover;
-@property (nonatomic) BOOL *truthful_lover;
-@property (nonatomic) BOOL *truthful_friend;
+@property (nonatomic) NSNumber *has_lover;          //bool
+@property (nonatomic) NSNumber *truthful_lover;     //bool
+@property (nonatomic) NSNumber *truthful_friend;    //bool
 
 @end

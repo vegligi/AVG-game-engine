@@ -13,7 +13,7 @@
     AppDelegate *app;
     ViewController *viewController;
 }
-@property (nonatomic, strong) NSArray *user;
+@property (nonatomic, strong) NSArray *dataArray;
 @end
 
 @implementation SettingViewController
@@ -29,6 +29,12 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     app = [[UIApplication sharedApplication]delegate];
+    //exception
+    if(self.dataArray == nil){
+        GameMode *gameMode = (GameMode*)[app.dataManager createRecordForEntity:@"GameMode"];
+        [gameMode setRpg:@YES];
+        [app.dataManager saveContext];
+    }
 }
 
 - (void)didReceiveMemoryWarning{
@@ -47,14 +53,26 @@
 	[alertDialog show];
 }
 
--(void)deleteEntity{
-    //fetch the column by index _pk
-    //self.user = [app.dataManager fetchRecordsForEntity:@"User" havingValue:@"2" forColumn:@"_pk"];
-    //delete all the columns
-    self.user = [app.dataManager fetchRecordsForEntity:@"User"];
+- (IBAction)gameModeWriteToEntity:(id)sender {
+    NSString *segmentSelectedLabel = [self.gameMode titleForSegmentAtIndex:self.gameMode.selectedSegmentIndex];
+    self.labelDisplay.text = [NSString stringWithFormat:@"%@ Mode has been Selected", segmentSelectedLabel];
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
+    for(GameMode *gameMode in self.dataArray){
+        if([segmentSelectedLabel isEqualToString:@"RPG"]){
+            [gameMode setRpg:@YES];
+        }else{
+            [gameMode setRpg:@NO];
+        }
+        [app.dataManager saveContext];
+    }
     
-    for (User *user in self.user){
-        [app.dataManager deleteRecord: user];
+}
+
+-(void)deleteEntity{
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
+    
+    for (User *dataArray in self.dataArray){
+        [app.dataManager deleteRecord: dataArray];
         [app.dataManager saveContext];
     }
     //connect to parent UI view controller calls notification turnItOff.

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface SettingViewController : ViewController
+@property (weak, nonatomic) IBOutlet UILabel *labelDisplay;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameMode;
 - (IBAction)buttonDeleteEntity:(id)sender;
-
+- (IBAction)gameModeWriteToEntity:(id)sender;
 @end
