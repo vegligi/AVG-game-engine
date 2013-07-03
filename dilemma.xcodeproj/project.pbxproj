@@ -14,6 +14,7 @@
 		86592047177C5264008652EB /* GameMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 86592046177C5264008652EB /* GameMode.m */; };
 		86B43D4C1779D12D002CD1F7 /* StartNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4B1779D12D002CD1F7 /* StartNewGameViewController.m */; };
 		86B43D4F1779D180002CD1F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4E1779D180002CD1F7 /* SettingViewController.m */; };
+		86C3376B17844A91005B8F9B /* Stage1.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3376A17844A91005B8F9B /* Stage1.m */; };
 		86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBD177870F00028ECDC /* UIKit.framework */; };
 		86DBCDC0177870F00028ECDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBF177870F00028ECDC /* Foundation.framework */; };
 		86DBCDC2177870F00028ECDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDC1177870F00028ECDC /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 		86B43D4B1779D12D002CD1F7 /* StartNewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartNewGameViewController.m; sourceTree = "<group>"; };
 		86B43D4D1779D180002CD1F7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		86B43D4E1779D180002CD1F7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		86C3376917844A91005B8F9B /* Stage1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage1.h; sourceTree = "<group>"; };
+		86C3376A17844A91005B8F9B /* Stage1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stage1.m; sourceTree = "<group>"; };
 		86DBCDBA177870F00028ECDC /* dilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DBCDBD177870F00028ECDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DBCDBF177870F00028ECDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,15 @@
 				8642E69E17788BC50005FA94 /* DataManager.m */,
 			);
 			name = "Model controller";
+			sourceTree = "<group>";
+		};
+		86C3376817844A4E005B8F9B /* Middle School */ = {
+			isa = PBXGroup;
+			children = (
+				86C3376917844A91005B8F9B /* Stage1.h */,
+				86C3376A17844A91005B8F9B /* Stage1.m */,
+			);
+			name = "Middle School";
 			sourceTree = "<group>";
 		};
 		86DBCDB1177870F00028ECDC = {
@@ -141,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				86DBCDE2177874BB0028ECDC /* Before the game */,
+				86C3376817844A4E005B8F9B /* Middle School */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 				86B43D4C1779D12D002CD1F7 /* StartNewGameViewController.m in Sources */,
 				86B43D4F1779D180002CD1F7 /* SettingViewController.m in Sources */,
 				86592047177C5264008652EB /* GameMode.m in Sources */,
+				86C3376B17844A91005B8F9B /* Stage1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

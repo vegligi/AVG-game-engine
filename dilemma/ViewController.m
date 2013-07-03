@@ -41,8 +41,23 @@
     for (GameMode *dataarray in self.dataArray){
         if(![[dataarray rpg] boolValue]){ //real Life Mode
             [self createRandomUserData];
-            [self performSegueWithIdentifier:@"segueToStage1" sender:self];
+            //navigate through Segue
+            //[self performSegueWithIdentifier:@"segueToStage1" sender:self];
+            ViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Stage1"];
+            [self presentViewController:vc animated:YES completion:nil];
        }
+    }
+}
+
+- (IBAction)buttonCountinue:(id)sender {
+    [self navigateToViewControllerFromLastGameSave];
+}
+
+-(void)navigateToViewControllerFromLastGameSave{
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
+    for (User *dataarray in self.dataArray){
+        ViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:dataarray.stage_index];
+        [self presentViewController:vc animated:YES completion:nil];
     }
 }
 
@@ -60,10 +75,10 @@
     int eq = arc4random() % 10;
     int energy = arc4random() % 10;
     int sum = energy + eq + iq + appearance;
-    appearance = appearance*11/sum;
-    iq = iq*11/sum;
-    eq = eq*11/sum;
-    energy = energy*11/sum;
+    appearance = appearance*14/sum;
+    iq = iq*14/sum;
+    eq = eq*14/sum;
+    energy = energy*14/sum;
     int health = 16 - appearance - iq - eq - energy;
     //generate
     dataArray.appearance = @(appearance);
@@ -72,6 +87,7 @@
     dataArray.energy = @(energy);
     dataArray.health = @(health);
     //Default
+    dataArray.stage_index = @"Stage1";
     [dataArray setTruthful_friend:@YES];
     [dataArray setTruthful_lover:@YES];
     [dataArray setHas_lover:@NO];

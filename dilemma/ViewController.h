@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonNewGame;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
 - (IBAction)buttonNewGame:(id)sender;
+- (IBAction)buttonCountinue:(id)sender;
 
 @end

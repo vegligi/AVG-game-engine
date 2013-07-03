@@ -56,13 +56,22 @@
     dataArray.energy = @([self.labelEnergy.text intValue]);
     dataArray.health = @([self.labelHealth.text intValue]);
     //Default
+    dataArray.stage_index = @"Stage1";
     [dataArray setTruthful_friend:@YES];
     [dataArray setTruthful_lover:@YES];
     [dataArray setHas_lover:@NO];
     dataArray.money = @(0);
     dataArray.adorable = @(0);
     [app.dataManager saveContext];
-    [self performSegueWithIdentifier:@"segueToStage1" sender:self];
+    [self navigateToViewControllerFromLastGameSave];
+}
+
+-(void)navigateToViewControllerFromLastGameSave{
+    self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
+    for (User *dataarray in self.dataArray){
+        ViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:dataarray.stage_index];
+        [self presentViewController:vc animated:YES completion:nil];
+    }
 }
 
 #pragma mark - Stepper
