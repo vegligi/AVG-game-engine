@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonContinue;
 @property (weak, nonatomic) IBOutlet UIButton *buttonNewGame;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
+@property (weak, nonatomic) IBOutlet UIImageView *imageCloud;
 - (IBAction)buttonNewGame:(id)sender;
 - (IBAction)buttonCountinue:(id)sender;
 

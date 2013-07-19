@@ -26,6 +26,11 @@
 		86DBCDD4177870F00028ECDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DBCDD3177870F00028ECDC /* Default-568h@2x.png */; };
 		86DBCDD7177870F10028ECDC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DBCDD5177870F00028ECDC /* MainStoryboard.storyboard */; };
 		86DBCDDA177870F10028ECDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DBCDD9177870F10028ECDC /* ViewController.m */; };
+		86F65DB917997D8E000F45B6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F65DB617997D8E000F45B6 /* background.png */; };
+		86F65DBA17997D8E000F45B6 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F65DB717997D8E000F45B6 /* cloud.png */; };
+		86F65DBB17997D8E000F45B6 /* roadsign.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F65DB817997D8E000F45B6 /* roadsign.png */; };
+		86F65DBD17997ECD000F45B6 /* roadsign_reflection.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F65DBC17997ECD000F45B6 /* roadsign_reflection.png */; };
+		86F65DC117999D70000F45B6 /* RTWS ShangGothic G0v1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 86F65DC017999D70000F45B6 /* RTWS ShangGothic G0v1.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +64,11 @@
 		86DBCDD6177870F10028ECDC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		86DBCDD8177870F10028ECDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		86DBCDD9177870F10028ECDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		86F65DB617997D8E000F45B6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		86F65DB717997D8E000F45B6 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		86F65DB817997D8E000F45B6 /* roadsign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roadsign.png; sourceTree = "<group>"; };
+		86F65DBC17997ECD000F45B6 /* roadsign_reflection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roadsign_reflection.png; sourceTree = "<group>"; };
+		86F65DC017999D70000F45B6 /* RTWS ShangGothic G0v1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWS ShangGothic G0v1.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +138,7 @@
 				86DBCDCC177870F00028ECDC /* AppDelegate.h */,
 				86DBCDCD177870F00028ECDC /* AppDelegate.m */,
 				86DBCDD5177870F00028ECDC /* MainStoryboard.storyboard */,
+				86F65DB317997CD4000F45B6 /* Resource */,
 				86DBCDE1177872930028ECDC /* Model */,
 				86DBCDE0177870F70028ECDC /* View Controller */,
 				86DBCDC4177870F00028ECDC /* Supporting Files */,
@@ -182,6 +193,34 @@
 				86B43D4E1779D180002CD1F7 /* SettingViewController.m */,
 			);
 			name = "Before the game";
+			sourceTree = "<group>";
+		};
+		86F65DB317997CD4000F45B6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				86F65DC017999D70000F45B6 /* RTWS ShangGothic G0v1.otf */,
+				86F65DB417997CFD000F45B6 /* Before the game */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		86F65DB417997CFD000F45B6 /* Before the game */ = {
+			isa = PBXGroup;
+			children = (
+				86F65DB617997D8E000F45B6 /* background.png */,
+				86F65DB717997D8E000F45B6 /* cloud.png */,
+				86F65DBC17997ECD000F45B6 /* roadsign_reflection.png */,
+				86F65DB817997D8E000F45B6 /* roadsign.png */,
+				86F65DB517997D0A000F45B6 /* ViewController */,
+			);
+			name = "Before the game";
+			sourceTree = "<group>";
+		};
+		86F65DB517997D0A000F45B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +279,11 @@
 				86DBCDD2177870F00028ECDC /* Default@2x.png in Resources */,
 				86DBCDD4177870F00028ECDC /* Default-568h@2x.png in Resources */,
 				86DBCDD7177870F10028ECDC /* MainStoryboard.storyboard in Resources */,
+				86F65DB917997D8E000F45B6 /* background.png in Resources */,
+				86F65DBA17997D8E000F45B6 /* cloud.png in Resources */,
+				86F65DBB17997D8E000F45B6 /* roadsign.png in Resources */,
+				86F65DBD17997ECD000F45B6 /* roadsign_reflection.png in Resources */,
+				86F65DC117999D70000F45B6 /* RTWS ShangGothic G0v1.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +329,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		86438CB81786300700A4D428 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Yang (W9R28ABGGC)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B209356-C833-49AD-97A1-16FBB9B73858";
+				SDKROOT = iphoneos;
+			};
+			name = Develop;
+		};
+		86438CB91786300700A4D428 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Yang (W9R28ABGGC)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dilemma/dilemma-Prefix.pch";
+				INFOPLIST_FILE = "dilemma/dilemma-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B209356-C833-49AD-97A1-16FBB9B73858";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Develop;
+		};
 		86DBCDDB177870F10028ECDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,19 +459,21 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86DBCDDB177870F10028ECDC /* Debug */,
+				86438CB81786300700A4D428 /* Develop */,
 				86DBCDDC177870F10028ECDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		86DBCDDD177870F10028ECDC /* Build configuration list for PBXNativeTarget "dilemma" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86DBCDDE177870F10028ECDC /* Debug */,
+				86438CB91786300700A4D428 /* Develop */,
 				86DBCDDF177870F10028ECDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

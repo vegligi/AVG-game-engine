@@ -26,6 +26,7 @@
     
     //init DataManager (not exaclty)
     app = [[UIApplication sharedApplication]delegate];
+    [self fontSetUp];         
     [self shouldButtonCountinueAppear];
     [self welcomeAnimation];
     [self updateGameMode];
@@ -33,6 +34,12 @@
 
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
+}
+
+-(void)fontSetUp {
+    [self.buttonContinue.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
+    [self.buttonNewGame.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
+    [self.buttonSetting.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
 }
 
 #pragma mark - Implementation
@@ -123,11 +130,25 @@
     self.buttonContinue.alpha = 0;
     self.buttonNewGame.alpha = 0;
     self.buttonSetting.alpha = 0;
-    [UIView animateWithDuration:1.2 animations:^(void){
+
+    CGRect frame_origin = self.imageCloud.frame;
+    frame_origin.origin.x = 230;
+    frame_origin.origin.y = 126;
+    self.imageCloud.frame = frame_origin;
+
+    
+    [UIView animateWithDuration:3 animations:^(void){
         self.buttonContinue.alpha = 100;
         self.buttonNewGame.alpha = 100;
         self.buttonSetting.alpha = 100;
     }];
+    
+    //doesnt work properlly with Autolayout.
+    [UIView animateWithDuration:80 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^(void){
+        CGRect frame = self.imageCloud.frame;
+        frame.origin.x = 8;
+        self.imageCloud.frame = frame;
+    } completion:^(BOOL finished) {}];
 }
 
 #pragma mark - Button Functions
