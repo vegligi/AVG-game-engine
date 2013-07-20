@@ -28,12 +28,12 @@
                                 <rect key="frame" x="150" y="25" width="197" height="303"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dWW-X8-i6D">
-                                <rect key="frame" x="20" y="443" width="85" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="dWW-X8-i6D">
+                                <rect key="frame" x="9" y="442" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="新的游戏">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -44,12 +44,12 @@
                                     <segue destination="hkg-C5-Ps1" kind="modal" modalTransitionStyle="crossDissolve" id="4Cs-08-Pqi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iJj-03-X9l">
-                                <rect key="frame" x="20" y="505" width="85" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="iJj-03-X9l">
+                                <rect key="frame" x="9" y="504" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="游戏设定">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -59,12 +59,12 @@
                                     <segue destination="VcC-do-woq" kind="modal" modalTransitionStyle="partialCurl" id="pxA-ur-leW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sg3-kA-dGt">
-                                <rect key="frame" x="20" y="385" width="85" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Sg3-kA-dGt">
+                                <rect key="frame" x="9" y="384" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="继续游戏">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -74,6 +74,21 @@
                                     <action selector="buttonCountinue:" destination="2" eventType="touchUpInside" id="Ada-50-dFb"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Xi8-ca-0bX">
+                                <rect key="frame" x="0.0" y="426" width="140" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41761001275510201" green="0.41761001275510201" blue="0.41761001275510201" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="71N-pm-I0P">
+                                <rect key="frame" x="0.0" y="484" width="140" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41761001279999999" green="0.41761001279999999" blue="0.41761001279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="UmU-D9-XPm">
+                                <rect key="frame" x="0.0" y="546" width="140" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41761001279999999" green="0.41761001279999999" blue="0.41761001279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -82,7 +97,11 @@
                         <outlet property="buttonContinue" destination="Sg3-kA-dGt" id="uXx-7V-Gri"/>
                         <outlet property="buttonNewGame" destination="dWW-X8-i6D" id="iNr-Ul-LMM"/>
                         <outlet property="buttonSetting" destination="iJj-03-X9l" id="8wb-BU-J2H"/>
-                        <outlet property="imageCloud" destination="Oed-c1-mFl" id="CWu-ao-r9V"/>
+                        <outlet property="imageCloud" destination="Oed-c1-mFl" id="CSS-xk-4tQ"/>
+                        <outlet property="imgLineUnderButtonCountinue" destination="Xi8-ca-0bX" id="rmT-d5-bdN"/>
+                        <outletCollection property="imgLine" destination="Xi8-ca-0bX" id="QjJ-QQ-FsP"/>
+                        <outletCollection property="imgLine" destination="71N-pm-I0P" id="hjP-oS-u7b"/>
+                        <outletCollection property="imgLine" destination="UmU-D9-XPm" id="AIj-5c-RCj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -251,51 +270,27 @@
         <scene sceneID="Xfj-cc-6sM">
             <objects>
                 <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VcC-do-woq" customClass="SettingViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5s3-AR-31l">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="5s3-AR-31l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mode:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hoK-5T-Ibw">
-                                <rect key="frame" x="20" y="375" width="48" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="新游戏开始模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hoK-5T-Ibw">
+                                <rect key="frame" x="72" y="316" width="177" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Real life mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gT6-5n-reS">
-                                <rect key="frame" x="20" y="437" width="109" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abdssdfsdfsdfsdfsdfsdfsf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nOA-CY-ZZY">
+                                <rect key="frame" x="20" y="357" width="280" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="RPG mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H5s-EO-kwJ">
-                                <rect key="frame" x="20" y="475" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="explaination" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="afS-dc-tai">
-                                <rect key="frame" x="20" y="452" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="explaination" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PRG-VV-PYc">
-                                <rect key="frame" x="20" y="489" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="it will be applied only player starts new game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8fp-7F-xNS">
-                                <rect key="frame" x="20" y="382" width="204" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EFw-yH-hDa">
-                                <rect key="frame" x="90" y="518" width="141" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EFw-yH-hDa">
+                                <rect key="frame" x="88" y="504" width="144" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="DELETE ENTITY">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除游戏存档">
+                                    <color key="titleColor" red="0.17504384570000001" green="0.17504384570000001" blue="0.17504384570000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -305,22 +300,30 @@
                                     <action selector="buttonDeleteEntity:" destination="VcC-do-woq" eventType="touchUpInside" id="IoS-S4-thh"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Xge-19-WfE">
-                                <rect key="frame" x="123" y="464" width="177" height="44"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Xge-19-WfE">
+                                <rect key="frame" x="72" y="401" width="177" height="30"/>
                                 <segments>
                                     <segment title="RPG"/>
-                                    <segment title="Real live"/>
+                                    <segment title="Real life"/>
                                 </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="gameModeWriteToEntity:" destination="VcC-do-woq" eventType="valueChanged" id="Am7-60-Cu3"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ThE-ze-lrv">
+                                <rect key="frame" x="71" y="545" width="179" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41761001279999999" green="0.41761001279999999" blue="0.41761001279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94893550390000003" green="1" blue="0.91964695669999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="buttonDelete" destination="EFw-yH-hDa" id="5j0-rU-EPB"/>
                         <outlet property="gameMode" destination="Xge-19-WfE" id="Ts5-zM-ptf"/>
-                        <outlet property="labelDisplay" destination="8fp-7F-xNS" id="VsS-FK-CJF"/>
+                        <outlet property="labelDisplay" destination="nOA-CY-ZZY" id="jdn-Sd-S36"/>
+                        <outlet property="labelTitle" destination="hoK-5T-Ibw" id="0GM-Qv-xZQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0V-nG-nhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,6 +426,60 @@
         <image name="roadsign.png" width="571" height="896"/>
         <image name="roadsign_reflection.png" width="571" height="896"/>
     </resources>
+    <classes>
+        <class className="SettingViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonDeleteEntity:"/>
+                <relationship kind="action" name="gameModeWriteToEntity:"/>
+                <relationship kind="outlet" name="buttonDelete" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="gameMode" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="labelDisplay" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Stage1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Stage1.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonBack:"/>
+            </relationships>
+        </class>
+        <class className="StartNewGameViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartNewGameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonCreateEntity:"/>
+                <relationship kind="action" name="buttonToModefyAppearance:"/>
+                <relationship kind="action" name="buttonToModefyEQ:"/>
+                <relationship kind="action" name="buttonToModefyEnergy:"/>
+                <relationship kind="action" name="buttonToModefyHealth:"/>
+                <relationship kind="action" name="buttonToModefyIQ:"/>
+                <relationship kind="outlet" name="labelAppearance" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelEQ" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelEnergy" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelHealth" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelIQ" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelTotalPoints" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="stepperAppearance" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="stepperEQ" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="stepperEnergy" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="stepperHealth" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="stepperIQ" candidateClass="UIStepper"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonCountinue:"/>
+                <relationship kind="action" name="buttonNewGame:"/>
+                <relationship kind="outlet" name="buttonContinue" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonNewGame" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonSetting" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageCloud" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imgLineUnderButtonCountinue" candidateClass="UIImageView"/>
+                <relationship kind="outletCollection" name="imgLine" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

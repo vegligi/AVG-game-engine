@@ -13,6 +13,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonNewGame;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSetting;
 @property (weak, nonatomic) IBOutlet UIImageView *imageCloud;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgLineUnderButtonCountinue;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgLine;
+
+
 - (IBAction)buttonNewGame:(id)sender;
 - (IBAction)buttonCountinue:(id)sender;
 

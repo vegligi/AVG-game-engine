@@ -30,7 +30,14 @@
     [super viewDidLoad];
     app = [[UIApplication sharedApplication]delegate];
     [self loadSegmentedControllersSelection];
-  
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"setting-background.png"]];
+    [self fontSetUp];
+}
+
+-(void)fontSetUp {
+    [self.buttonDelete.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:20]];
+    self.labelDisplay.font = [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:16];
+    self.labelTitle.font = [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:22];
 }
 
 - (void)didReceiveMemoryWarning{
@@ -41,11 +48,11 @@
 - (IBAction)buttonDeleteEntity:(id)sender {
     UIAlertView *alertDialog;
     alertDialog = [[UIAlertView alloc]
-                   initWithTitle: @"Do you want to delete game progress??"
+                   initWithTitle: @"为什么要放弃治疗??"
                    message:@" (╯°□°）╯︵ ┻━┻"
                    delegate: self
-                   cancelButtonTitle: @"Cancel"
-                   otherButtonTitles: @"Delete data", nil];
+                   cancelButtonTitle: @"取消"
+                   otherButtonTitles: @"删除存档", nil];
 	[alertDialog show];
 }
 
@@ -90,7 +97,7 @@
 - (void)alertView:(UIAlertView *)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex {
 	NSString *buttonTitle=[alertView buttonTitleAtIndex:buttonIndex];
-	if ([buttonTitle isEqualToString:@"Delete data"]) {
+	if ([buttonTitle isEqualToString:@"删除存档"]) {
         [self deleteEntity];
     }
 }

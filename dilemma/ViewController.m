@@ -37,9 +37,9 @@
 }
 
 -(void)fontSetUp {
-    [self.buttonContinue.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
-    [self.buttonNewGame.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
-    [self.buttonSetting.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:18]];
+    [self.buttonContinue.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:24]];
+    [self.buttonNewGame.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:24]];
+    [self.buttonSetting.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:24]];
 }
 
 #pragma mark - Implementation
@@ -105,6 +105,7 @@
 
 -(void)turnButtonCountinuesOff{
     self.buttonContinue.hidden = YES;
+    self.imgLineUnderButtonCountinue.hidden = YES;
 }
 
 -(void)shouldButtonCountinueAppear{
@@ -112,8 +113,11 @@
     self.dataArray = [app.dataManager fetchRecordsForEntity:@"User"];
     if([self.dataArray count] <= 0){
         self.buttonContinue.hidden = YES;
+        self.imgLineUnderButtonCountinue.hidden = YES;
+
     }else{
         self.buttonContinue.hidden = NO;
+        self.imgLineUnderButtonCountinue.hidden = NO;
     }
 }
 
@@ -130,6 +134,10 @@
     self.buttonContinue.alpha = 0;
     self.buttonNewGame.alpha = 0;
     self.buttonSetting.alpha = 0;
+    for (UIImageView *img in self.imgLine) {
+        img.alpha = 0;
+    }
+
 
     CGRect frame_origin = self.imageCloud.frame;
     frame_origin.origin.x = 230;
@@ -137,10 +145,13 @@
     self.imageCloud.frame = frame_origin;
 
     
-    [UIView animateWithDuration:3 animations:^(void){
+    [UIView animateWithDuration:0.5 animations:^(void){
         self.buttonContinue.alpha = 100;
         self.buttonNewGame.alpha = 100;
         self.buttonSetting.alpha = 100;
+        for (UIImageView *img in self.imgLine) {
+            img.alpha = 100;
+        }
     }];
     
     //doesnt work properlly with Autolayout.

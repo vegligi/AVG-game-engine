@@ -15,6 +15,9 @@
 		86B43D4C1779D12D002CD1F7 /* StartNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4B1779D12D002CD1F7 /* StartNewGameViewController.m */; };
 		86B43D4F1779D180002CD1F7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B43D4E1779D180002CD1F7 /* SettingViewController.m */; };
 		86C3376B17844A91005B8F9B /* Stage1.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3376A17844A91005B8F9B /* Stage1.m */; };
+		86C4CEDD179B3ED3002FCFE1 /* setting-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C4CEDC179B3ED3002FCFE1 /* setting-background.png */; };
+		86D010CC179AE12A0006B621 /* LOGO_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D010CB179AE12A0006B621 /* LOGO_114.png */; };
+		86D010CE179AE12F0006B621 /* LOGO57.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D010CD179AE12F0006B621 /* LOGO57.png */; };
 		86DBCDBE177870F00028ECDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBD177870F00028ECDC /* UIKit.framework */; };
 		86DBCDC0177870F00028ECDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDBF177870F00028ECDC /* Foundation.framework */; };
 		86DBCDC2177870F00028ECDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DBCDC1177870F00028ECDC /* CoreGraphics.framework */; };
@@ -48,6 +51,9 @@
 		86B43D4E1779D180002CD1F7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		86C3376917844A91005B8F9B /* Stage1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage1.h; sourceTree = "<group>"; };
 		86C3376A17844A91005B8F9B /* Stage1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stage1.m; sourceTree = "<group>"; };
+		86C4CEDC179B3ED3002FCFE1 /* setting-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-background.png"; sourceTree = "<group>"; };
+		86D010CB179AE12A0006B621 /* LOGO_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO_114.png; path = ../LOGO_114.png; sourceTree = "<group>"; };
+		86D010CD179AE12F0006B621 /* LOGO57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LOGO57.png; path = ../LOGO57.png; sourceTree = "<group>"; };
 		86DBCDBA177870F00028ECDC /* dilemma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dilemma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DBCDBD177870F00028ECDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DBCDBF177870F00028ECDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -199,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				86F65DC017999D70000F45B6 /* RTWS ShangGothic G0v1.otf */,
+				86D010CD179AE12F0006B621 /* LOGO57.png */,
+				86D010CB179AE12A0006B621 /* LOGO_114.png */,
 				86F65DB417997CFD000F45B6 /* Before the game */,
 			);
 			name = Resource;
@@ -211,6 +219,7 @@
 				86F65DB717997D8E000F45B6 /* cloud.png */,
 				86F65DBC17997ECD000F45B6 /* roadsign_reflection.png */,
 				86F65DB817997D8E000F45B6 /* roadsign.png */,
+				86C4CEDC179B3ED3002FCFE1 /* setting-background.png */,
 				86F65DB517997D0A000F45B6 /* ViewController */,
 			);
 			name = "Before the game";
@@ -284,6 +293,9 @@
 				86F65DBB17997D8E000F45B6 /* roadsign.png in Resources */,
 				86F65DBD17997ECD000F45B6 /* roadsign_reflection.png in Resources */,
 				86F65DC117999D70000F45B6 /* RTWS ShangGothic G0v1.otf in Resources */,
+				86D010CC179AE12A0006B621 /* LOGO_114.png in Resources */,
+				86D010CE179AE12F0006B621 /* LOGO57.png in Resources */,
+				86C4CEDD179B3ED3002FCFE1 /* setting-background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
