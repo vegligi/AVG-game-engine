@@ -50,11 +50,11 @@
 - (IBAction)buttonDeleteEntity:(id)sender {
     UIAlertView *alertDialog;
     alertDialog = [[UIAlertView alloc]
-                   initWithTitle: @"为什么要放弃治疗??"
+                   initWithTitle: @"are you sure??"
                    message:@" (╯°□°）╯︵ ┻━┻"
                    delegate: self
-                   cancelButtonTitle: @"取消"
-                   otherButtonTitles: @"删除存档", nil];
+                   cancelButtonTitle: @"cancel"
+                   otherButtonTitles: @"delete", nil];
 	[alertDialog show];
 }
 
@@ -68,12 +68,12 @@
     for(GameMode *gameMode in self.dataArray){
         if([segmentSelectedLabel isEqualToString:@"RPG"]){
             [gameMode setRpg:@YES];
-            self.labelDisplay.text = [NSString stringWithFormat:@"RPG 模式开启"];
-            self.labelDescription.text = [NSString stringWithFormat:@"创建新游戏时,玩家属性可以自定义"];
+            self.labelDisplay.text = [NSString stringWithFormat:@"RPG mode"];
+            self.labelDescription.text = [NSString stringWithFormat:@"user can assign values to ability"];
         }else{
             [gameMode setRpg:@NO];
-            self.labelDisplay.text = [NSString stringWithFormat:@"Real life 模式开启"];
-            self.labelDescription.text = [NSString stringWithFormat:@"创建新游戏时,玩家属性随机,并附送点数"];
+            self.labelDisplay.text = [NSString stringWithFormat:@"Real life mode"];
+            self.labelDescription.text = [NSString stringWithFormat:@"user get random ability value"];
         }
         [app.dataManager saveContext];
     }
@@ -105,7 +105,7 @@
 - (void)alertView:(UIAlertView *)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex {
 	NSString *buttonTitle=[alertView buttonTitleAtIndex:buttonIndex];
-	if ([buttonTitle isEqualToString:@"删除存档"]) {
+	if ([buttonTitle isEqualToString:@"delete"]) {
         [self deleteEntity];
     }
 }

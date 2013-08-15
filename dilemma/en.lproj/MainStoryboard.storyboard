@@ -32,7 +32,7 @@
                                 <rect key="frame" x="9" y="442" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="新的游戏">
+                                <state key="normal" title="New game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,7 +48,7 @@
                                 <rect key="frame" x="9" y="504" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="游戏设定">
+                                <state key="normal" title="Setting">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,7 +63,7 @@
                                 <rect key="frame" x="9" y="384" width="122" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="继续游戏">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -155,14 +155,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="总点数:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ii-u8-LuB">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Points" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ii-u8-LuB">
                                 <rect key="frame" x="100" y="41" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="样貌" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S9d-ZQ-tQn">
-                                <rect key="frame" x="20" y="120" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Appearance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S9d-ZQ-tQn">
+                                <rect key="frame" x="20" y="120" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -173,8 +173,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="智商" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wcJ-MU-uPZ">
-                                <rect key="frame" x="20" y="165" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wcJ-MU-uPZ">
+                                <rect key="frame" x="20" y="165" width="18" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,8 +185,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="情商" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mIQ-kc-VsA">
-                                <rect key="frame" x="20" y="220" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="EQ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mIQ-kc-VsA">
+                                <rect key="frame" x="20" y="220" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -203,14 +203,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="精力" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dkg-O1-y9B">
-                                <rect key="frame" x="20" y="270" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Energy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dkg-O1-y9B">
+                                <rect key="frame" x="20" y="270" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="体力" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CcK-pg-D4b">
-                                <rect key="frame" x="20" y="346" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Health" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CcK-pg-D4b">
+                                <rect key="frame" x="20" y="346" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -274,7 +274,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="新游戏开始模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hoK-5T-Ibw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mode for new game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hoK-5T-Ibw">
                                 <rect key="frame" x="72" y="334" width="177" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -295,7 +295,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EFw-yH-hDa">
                                 <rect key="frame" x="88" y="504" width="144" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="删除游戏存档">
+                                <state key="normal" title="Delete game data">
                                     <color key="titleColor" red="0.17504384570000001" green="0.17504384570000001" blue="0.17504384570000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -362,7 +362,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EPg-Xb-MWB">
                                 <rect key="frame" x="30" y="338" width="262" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="找座位一个人坐">
+                                <state key="normal" title="seat alone">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -373,9 +373,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BqQ-wN-Ebd">
                                 <rect key="frame" x="30" y="389" width="262" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <string key="title">翘了,去打游戏.
-反正第一天也没有课</string>
+                                <state key="normal" title="go back home">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -386,7 +384,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S2g-qO-ZdQ">
                                 <rect key="frame" x="30" y="491" width="262" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="找一个女生是同桌的座位">
+                                <state key="normal" title="XXXX">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -397,7 +395,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sKC-3V-9i7">
                                 <rect key="frame" x="30" y="440" width="262" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="社交,打听班里同学情报和背景">
+                                <state key="normal" title="make friends">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -408,12 +406,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RwM-re-XrT">
                                 <rect key="frame" x="30" y="73" width="262" height="164"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <string key="text">转眼间.十二年过去了.
-今天是你第一天上初中.
-你早早的来到了学校.
-一个陌生的环境.让你有点紧张…
-班级还没有分座位.
-这个时候</string>
+                                <string key="text">today is your first day at middle school.
+after arrive at classroom.
+you decide....</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -433,61 +428,6 @@
         <image name="roadsign.png" width="571" height="896"/>
         <image name="roadsign_reflection.png" width="571" height="896"/>
     </resources>
-    <classes>
-        <class className="SettingViewController" superclassName="ViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonDeleteEntity:"/>
-                <relationship kind="action" name="gameModeWriteToEntity:"/>
-                <relationship kind="outlet" name="buttonDelete" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="gameMode" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="labelDescription" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelDisplay" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelTitle" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="Stage1" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Stage1.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonBack:"/>
-            </relationships>
-        </class>
-        <class className="StartNewGameViewController" superclassName="ViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartNewGameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonCreateEntity:"/>
-                <relationship kind="action" name="buttonToModefyAppearance:"/>
-                <relationship kind="action" name="buttonToModefyEQ:"/>
-                <relationship kind="action" name="buttonToModefyEnergy:"/>
-                <relationship kind="action" name="buttonToModefyHealth:"/>
-                <relationship kind="action" name="buttonToModefyIQ:"/>
-                <relationship kind="outlet" name="labelAppearance" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelEQ" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelEnergy" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelHealth" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelIQ" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelTotalPoints" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="stepperAppearance" candidateClass="UIStepper"/>
-                <relationship kind="outlet" name="stepperEQ" candidateClass="UIStepper"/>
-                <relationship kind="outlet" name="stepperEnergy" candidateClass="UIStepper"/>
-                <relationship kind="outlet" name="stepperHealth" candidateClass="UIStepper"/>
-                <relationship kind="outlet" name="stepperIQ" candidateClass="UIStepper"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonCountinue:"/>
-                <relationship kind="action" name="buttonNewGame:"/>
-                <relationship kind="outlet" name="buttonContinue" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="buttonNewGame" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="buttonSetting" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="imageCloud" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imgLineUnderButtonCountinue" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="imgLine" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
