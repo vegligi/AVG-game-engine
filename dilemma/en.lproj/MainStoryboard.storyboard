@@ -275,13 +275,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="新游戏开始模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hoK-5T-Ibw">
-                                <rect key="frame" x="72" y="316" width="177" height="50"/>
+                                <rect key="frame" x="72" y="334" width="177" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abdssdfsdfsdfsdfsdfsdfsf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nOA-CY-ZZY">
-                                <rect key="frame" x="20" y="357" width="280" height="50"/>
+                                <rect key="frame" x="20" y="362" width="280" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abdssdfsdfsdfsdfsdfsdfsf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8fW-SO-Y4i">
+                                <rect key="frame" x="20" y="430" width="280" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -301,7 +307,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Xge-19-WfE">
-                                <rect key="frame" x="72" y="401" width="177" height="30"/>
+                                <rect key="frame" x="72" y="402" width="177" height="30"/>
                                 <segments>
                                     <segment title="RPG"/>
                                     <segment title="Real life"/>
@@ -312,7 +318,7 @@
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ThE-ze-lrv">
-                                <rect key="frame" x="71" y="545" width="179" height="2"/>
+                                <rect key="frame" x="88" y="543" width="144" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41761001279999999" green="0.41761001279999999" blue="0.41761001279999999" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -322,6 +328,7 @@
                     <connections>
                         <outlet property="buttonDelete" destination="EFw-yH-hDa" id="5j0-rU-EPB"/>
                         <outlet property="gameMode" destination="Xge-19-WfE" id="Ts5-zM-ptf"/>
+                        <outlet property="labelDescription" destination="8fW-SO-Y4i" id="Int-rZ-cPd"/>
                         <outlet property="labelDisplay" destination="nOA-CY-ZZY" id="jdn-Sd-S36"/>
                         <outlet property="labelTitle" destination="hoK-5T-Ibw" id="0GM-Qv-xZQ"/>
                     </connections>
@@ -434,6 +441,7 @@
                 <relationship kind="action" name="gameModeWriteToEntity:"/>
                 <relationship kind="outlet" name="buttonDelete" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="gameMode" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="labelDescription" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="labelDisplay" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="labelTitle" candidateClass="UILabel"/>
             </relationships>

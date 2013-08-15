@@ -28,6 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"QQ20130723-8.jpg"]];
     self.labelTotalPoints.text = @"15";
     self.labelAppearance.text = @"0";
     self.labelIQ.text = @"0";

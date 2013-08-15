@@ -31,6 +31,7 @@
     app = [[UIApplication sharedApplication]delegate];
     [self loadSegmentedControllersSelection];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"setting-background.png"]];
+    [self gameModeCheckAndWriteToEntityFromSegmentIndex];
     [self fontSetUp];
 }
 
@@ -38,6 +39,7 @@
     [self.buttonDelete.titleLabel setFont: [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:20]];
     self.labelDisplay.font = [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:16];
     self.labelTitle.font = [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:22];
+    self.labelDescription.font = [UIFont fontWithName:@"RTWS ShangGothic G0v1" size:14];
 }
 
 - (void)didReceiveMemoryWarning{
@@ -57,18 +59,24 @@
 }
 
 - (IBAction)gameModeWriteToEntity:(id)sender {
+    [self gameModeCheckAndWriteToEntityFromSegmentIndex];
+}
+
+-(void)gameModeCheckAndWriteToEntityFromSegmentIndex{
     NSString *segmentSelectedLabel = [self.gameMode titleForSegmentAtIndex:self.gameMode.selectedSegmentIndex];
-    self.labelDisplay.text = [NSString stringWithFormat:@"%@ Mode has been Selected", segmentSelectedLabel];
     self.dataArray = [app.dataManager fetchRecordsForEntity:@"GameMode"];
     for(GameMode *gameMode in self.dataArray){
         if([segmentSelectedLabel isEqualToString:@"RPG"]){
             [gameMode setRpg:@YES];
+            self.labelDisplay.text = [NSString stringWithFormat:@"RPG 模式开启"];
+            self.labelDescription.text = [NSString stringWithFormat:@"创建新游戏时,玩家属性可以自定义"];
         }else{
             [gameMode setRpg:@NO];
+            self.labelDisplay.text = [NSString stringWithFormat:@"Real life 模式开启"];
+            self.labelDescription.text = [NSString stringWithFormat:@"创建新游戏时,玩家属性随机,并附送点数"];
         }
         [app.dataManager saveContext];
     }
-    
 }
 
 -(void)loadSegmentedControllersSelection{
